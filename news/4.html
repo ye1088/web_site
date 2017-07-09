@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap -->
+    
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+        
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="../cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<style>
+    #header{
+        background: #222;
+        padding: 10px;
+        padding-top:15px ;
+        background: rgba(18,18,18,0.9);
+        width:100%;
+        position: fixed;
+        z-index: 1000000000000;
+    }
+    #header nav{
+        margin-bottom: 0;
+        border:0;
+        font-size:16px;
+        font-weight: bold;
+        background: transparent;
+    }
+    #header .navbar-brand {
+        padding: 0;
+    }
+    #header .navbar-nav{
+        padding-left: 15px ;
+    }
+
+    #header .navbar-nav > li > a{
+        padding: 15px 9px;
+        border-radius:5px;
+        color:white;
+    }
+    .nav-color{
+        color:#fff;
+        font-size: 16px;
+    }
+    .nav-color p{
+        margin-bottom: 0px;
+    }
+</style>
+    <style>
+        .first {
+            padding-top: 120px;
+            font-size: 18px;
+            line-height: 32px;
+        }
+
+        .first .container {
+            padding: 0;
+        }
+
+        .first .breadcrumb a {
+            color: black;
+        }
+    </style>
+    
+    <style>
+        .second .container {
+            border-radius: 5px;
+            padding: 20px;
+            color: black;
+        }
+
+        .second .nav {
+            margin-bottom: 40px;
+        }
+
+        .second .nav li.active a {
+            /*background: #eee;*/
+            color: #e03434;
+            font-weight: bold;
+        }
+
+        .second .media {
+            border-bottom: 1px dashed #ccc;
+        }
+        .second a{
+            color:black;
+        }
+        .second a:hover{
+            text-decoration: none;
+        }
+        .recommend .panel-heading{
+            position: relative;
+         background: inherit;
+        }
+        .more{
+            position: absolute;
+            right:20px;
+            top:26%;
+            font-size: 12px;
+        }
+        .recommend .list-group-item{
+            border: none;
+            margin: 2px auto;
+            border-bottom: 1px solid #ddd;
+            font-size: 13px;
+        }
+        .recommend .list-group-item:last-child{
+            border: none;
+        }
+        .recommend .list-group-item em{
+            font-weight: bold;
+            color: #9d9999;
+            margin-right: 1px;
+        }
+        .recommend .list-group-item:hover{
+            background: inherit;
+        }
+        .recommend-li{
+            color:#ff9242 !important;
+
+        }
+        .nav-tabs {
+            border-bottom:1px dashed #ddd;
+        }
+        .second .nav-tabs > li.active > a{
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            border-bottom:1px dashed #ddd;
+        }
+        .second .nav-tabs > li.active > a:hover{
+            border: none;
+            border-bottom:1px dashed #ddd;
+        }
+    </style>
+    <div class="second margin-bottom-40">
+        <div class="container">
+            <div class="col-xs-9">
+                <div class="media">
+                        <div class="media-left media-middle">
+                            <a href="#">
+                                
+                            </a>
+                        </div>
+                        <a href="newsinfo/65.html?title=Docker的安装流程及命令">
+                            <div class="media-body">
+                                <h3 class="media-heading">Docker的安装流程及命令 <font color='#33CCFF' size="1">付费阅读</font></h3><br>
+                                <p>
+                                    Docker的安装流程及命令
+                                </p>
+                                <p class="text-right">
+                                    2017-05-11 08:43:25
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="media">
+                        <div class="media-left media-middle">
+                            <a href="#">
+                                
+                            </a>
+                        </div>
+                        <a href="newsinfo/65.html?title=php设计模块式——单例模式">
+                            <div class="media-body">
+                                <h3 class="media-heading">php设计模块式——单例模式 <font color='#33CCFF' size="1">付费阅读</font></h3><br>
+                                <p>
+                                    php设计模块式——singleton(单例模式)
+                                </p>
+                                <p class="text-right">
+                                    2017-05-10 09:36:26
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="media">
+                        <div class="media-left media-middle">
+                            <a href="#">
+                                
+                            </a>
+                        </div>
+                        <a href="newsinfo/65.html?title=php设计模块式——工厂方式模式">
+                            <div class="media-body">
+                                <h3 class="media-heading">php设计模块式——工厂方式模式 <font color='#33CCFF' size="1">付费阅读</font></h3><br>
+                                <p>
+                                    php设计模块式——factory_method(工厂方式模式)
+                                </p>
+                                <p class="text-right">
+                                    2017-05-10 09:35:56
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="media">
+                        <div class="media-left media-middle">
+                            <a href="#">
+                                
+                            </a>
+                        </div>
+                        <a href="newsinfo/65.html?title=抽象工厂模式">
+                            <div class="media-body">
+                                <h3 class="media-heading">抽象工厂模式 <font color='#33CCFF' size="1">付费阅读</font> <font color='#33CCFF' size="1">付费阅读</font></h3><br>
+                                <p>
+                                    抽象工厂模式
+                                </p>
+                                <p class="text-right">
+                                    2017-05-09 09:20:31
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="media">
+                        <div class="media-left media-middle">
+                            <a href="#">
+                                
+                            </a>
+                        </div>
+                        <a href="newsinfo/65.html?title=docker compose 基本使用">
+                            <div class="media-body">
+                                <h3 class="media-heading">docker compose 基本使用 <font color='#33CCFF' size="1">付费阅读</font></h3><br>
+                                <p>
+                                    docker compose 基本使用
+                                </p>
+                                <p class="text-right">
+                                    2017-05-09 09:19:46
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="media">
+                        <div class="media-left media-middle">
+                            <a href="#">
+                                
+                            </a>
+                        </div>
+                        <a href="newsinfo/65.html?title=微信小程序快速入手">
+                            <div class="media-body">
+                                <h3 class="media-heading">微信小程序快速入手 <font color='#33CCFF' size="1">付费阅读</font></h3><br>
+                                <p>
+                                    框架介绍
+                                </p>
+                                <p class="text-right">
+                                    2017-05-08 09:20:35
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="media">
+                        <div class="media-left media-middle">
+                            <a href="#">
+                                
+                            </a>
+                        </div>
+                        <a href="newsinfo/65.html?title=laravel队列的使用">
+                            <div class="media-body">
+                                <h3 class="media-heading">laravel队列的使用 <font color='#33CCFF' size="1">付费阅读</font></h3><br>
+                                <p>
+                                    laravel队列的基本介绍
+                                </p>
+                                <p class="text-right">
+                                    2017-05-08 09:17:48
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="media">
+                        <div class="media-left media-middle">
+                            <a href="#">
+                                
+                            </a>
+                        </div>
+                        <a href="newsinfo/65.html?title=Windows同步线程封装类">
+                            <div class="media-body">
+                                <h3 class="media-heading">Windows同步线程封装类 <font color='#33CCFF' size="1">付费阅读</font></h3><br>
+                                <p>
+                                    Windows同步线程封装类
+                                </p>
+                                <p class="text-right">
+                                    2017-04-25 08:35:21
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="media">
+                        <div class="media-left media-middle">
+                            <a href="#">
+                                
+                            </a>
+                        </div>
+                        <a href="newsinfo/65.html?title=php的23种设计模式">
+                            <div class="media-body">
+                                <h3 class="media-heading">php的23种设计模式 <font color='#33CCFF' size="1">付费阅读</font></h3><br>
+                                <p>
+                                    php的23种设计模式
+                                </p>
+                                <p class="text-right">
+                                    2017-04-25 08:34:14
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="media">
+                        <div class="media-left media-middle">
+                            <a href="#">
+                                
+                            </a>
+                        </div>
+                        <a href="newsinfo/65.html?title=Docker的安装与常用命令">
+                            <div class="media-body">
+                                <h3 class="media-heading">Docker的安装与常用命令 <font color='#33CCFF' size="1">付费阅读</font></h3><br>
+                                <p>
+                                    Docker的安装与常用命令
+                                </p>
+                                <p class="text-right">
+                                    2017-04-25 08:32:55
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                
+                <div class="row text-center">
+                    <ul class="pagination">
+                        <li><a href="3.html" rel="prev">&laquo;</a></li>
+                        <li><a href="1.html">1</a></li>
+                        <li><a href="2.html">2</a></li>
+                        <li><a href="3.html">3</a></li>
+                        <li class="active"><span>4</span></li>
+                        <li class="disabled"><span>&raquo;</span></li>
+                    </ul>
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+
+
+</html>
+

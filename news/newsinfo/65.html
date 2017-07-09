@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../../assets/css/globalCss.css" rel="stylesheet">    
+        
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../../cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="../../cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<style>
+    #header{
+        background: #222;
+        padding: 10px;
+        padding-top:15px ;
+        background: rgba(18,18,18,0.9);
+        width:100%;
+        position: fixed;
+        z-index: 1000000000000;
+    }
+    #header nav{
+        margin-bottom: 0;
+        border:0;
+        font-size:16px;
+        font-weight: bold;
+        background: transparent;
+    }
+    #header .navbar-brand {
+        padding: 0;
+    }
+    #header .navbar-nav{
+        padding-left: 15px ;
+    }
+
+    #header .navbar-nav > li > a{
+        padding: 15px 9px;
+        border-radius:5px;
+        color:white;
+    }
+    .nav-color{
+        color:#fff;
+        font-size: 16px;
+    }
+    .nav-color p{
+        margin-bottom: 0px;
+    }
+</style>
+    <style>
+        .first {
+            padding-top: 12px;
+            font-size: 18px;
+            line-height: 32px;
+        }
+
+        .first .container {
+            padding: 0;
+        }
+
+        .first .breadcrumb a {
+            color: black;
+        }
+    </style>
+    <div class="first">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="../1.html">行业资讯</a></li>
+                <li  id="active_title" class="active"></li>
+            </ol>
+        </div>
+    </div>
+
+    
+    <style>
+        .second .container {
+            border-radius: 5px;
+            padding: 20px;
+            color: black;
+            border: 1px solid #ddd;
+        }
+
+        .second .nav {
+            margin-bottom: 40px;
+        }
+
+        .second .nav li.active a {
+            background: #eee;
+            color: #e03434;
+            font-weight: bold;
+        }
+
+        .second .media {
+            border-bottom: 1px dashed #ccc;
+        }
+        .second a{
+            color:black;
+        }
+        .second a:hover{
+            text-decoration: none;
+        }
+        .right{
+            margin-top:120px;
+            padding-left: 20px;
+            border-left: 1px solid #ccc;
+        }
+        .locked{
+            overflow:hidden;
+            margin: 10px 0;
+            width:400px;
+            padding: 8px 8px 8px 24px;
+            border: 1px dashed #ff9a9a;
+            background: #fff url(../../assets/img/locked.gif) no-repeat 6px 50%;
+        }
+    </style>
+    <div class="second margin-bottom-40">
+        <div class="container">
+            <div class="col-xs-12">
+                <div class="page-header">
+                    <h1 id="artice_title" class="blog-title"></h1>
+                </div>
+                <div class="locked">
+                    如果您要查看本帖隐藏内容请 扫码 <font color='#33CCFF' >继续阅读</font>
+                </div>
+                <img src="../../assets/img/read_continue.png" width="200" height="200"/>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+function UrlSearch() 
+{
+   var name,value; 
+   var str=location.href; //取得整个地址栏
+   var num=str.indexOf("?") 
+   str=str.substr(num+1); //取得所有参数   stringvar.substr(start [, length ]
+
+   var arr=str.split("&"); //各个参数放到数组里
+   for(var i=0;i < arr.length;i++){ 
+    num=arr[i].indexOf("="); 
+    if(num>0){ 
+     name=arr[i].substring(0,num);
+     value=arr[i].substr(num+1);
+     this[name]=value;
+     } 
+    } 
+} 
+var Request=new UrlSearch(); //实例化
+// alert(decodeURIComponent(Request.title));
+document.getElementById("artice_title").innerHTML = decodeURIComponent(Request.title) + " <font color='#33CCFF' size='1'>付费阅读</font>"
+document.getElementById("active_title").innerHTML = decodeURIComponent(Request.title)
+</script>
+
+</html>
+

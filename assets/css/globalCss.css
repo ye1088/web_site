@@ -1,0 +1,52 @@
+/*================background==================*/
+.background-eee{
+    background: #eee;
+}
+
+.background-red{
+    background: #e03434;
+}
+
+
+/*=================font-weight================*/
+.font-weight{
+    font-weight: bold;;
+}
+
+
+/*=================line-height================*/
+.line-height-32{
+   line-height: 32px;
+}
+
+/*=================color======================*/
+.color-red{
+    color:#e03434;
+}
+.color-white{
+    color:white;
+}
+
+/*====================border=======================*/
+
+/*=================margin=====================*/
+.margin-bottom-40{
+    margin-bottom: 40px;
+}
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+
+/*===================padding==================*/
+.padding-vertical-10{
+    padding:10px 0;
+}
+.padding-vertical-40{
+    padding:40px 0;
+}
+.padding-level-40{
+    padding: 0 40px;
+}
+.padding-bottom-40{
+    padding-bottom: 40px;
+}
